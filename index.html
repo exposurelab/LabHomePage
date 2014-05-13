@@ -1,53 +1,120 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Environmental Health Assessment Laboratory</title>
-	<link rel="stylesheet" href="css\bootstrap-3.1.1-dist\css\bootstrap.min.css">
-	<script src="css\bootstrap-3.1.1-dist\js\bootstrap.min.js"></script>	
-</head>
-<body>
-	<div class="container">		
-		<div class="row">			 
-			
-			<!--right column -->
-			 <div class="col-md-8">
-			  	
-			  	<h2><strong>Instrumentation</strong></h2>
-			  	
-			  	<hr />
-			  	<h3><span class="glyphicon glyphicon-th-list"></span>&nbsp ion chromatography (IC)</h3>
-			  	<img src="img\Instrumentation\ic.jpg" alt="ic" class="img-thumbnail"><p></p>
-			  	<p class="text-justify text-info">IC is used to analyze ionic species of aerosol such as sulfate, nitrate, ammonium, sodium, chloride, etc.</p>
-			  	
-			  	<hr />
-			  	<h3><span class="glyphicon glyphicon-th-list"></span>&nbsp gas chromatography (GC)</h3>
-			  	<img src="img\Instrumentation\gc.jpg" alt="gc" class="img-thumbnail"><p></p>
-			  	<p class="text-justify text-info">GC is connected to two different detectors: electron capture detector (ECD)and flame ionization detector (FID) to analyze polychlorinated biphenyls (PCBs), polycyclic aromatic hydrocarbons (PAHs) and chlorinated pesticides</p>
-			  	
-			  	<hr />
-			  	<h3><span class="glyphicon glyphicon-th-list"></span>&nbsp GC mass spectrometry</h3>
-			  	<img src="img\Instrumentation\gc-ms.jpg" alt="gc-ms" class="img-thumbnail"><p></p>
-			  	<p class="text-justify text-info">Besides analyzing PAHs, PCBs, and chlorinated pesticides, GC/MS is used to analyze source tracers such as those emitted from vehicle and fragrances.</p>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
 
-			  	<hr />
-			  	<h3><span class="glyphicon glyphicon-th-list"></span>&nbsp liquid chromatography -- triple-quadrupole mass spectrometry (LC/MS/MS)</h3>
-			  	<img src="img\Instrumentation\lc-ms-ms.jpg" alt="lc-ms-ms" class="img-thumbnail"><p></p>
-			  	<p class="text-justify text-info">LC/MS/MS is used to analyze soluble organics in the aerosols such as tracers from biomass burning and tire dusts and organic acids; it can also be used for analyze pharmaceuticals and active ingredients of personal care products in the water environments which may be harmful to biota in the waters.</p>	
-			 
-			 </div>			
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
 
-			<!--left column -->
-			 <div class="col-md-4">
-			 	<ul class="nav nav-pills nav-stacked">
-					<li><a href="">ion chromatography (IC)</a></li>
-					<li><a href="">gas chromatography (GC)<</a></li>
-					<li><a href="">GC mass spectrometry</a></li>
-					<li><a href="">(LC/MS/MS)</a></li>
-				</ul>
-			 </div>
+    <!-- Custom styles for this template -->
+    <link href="css/theme.css" rel="stylesheet">
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->  
+  </head>
+  
+  <body role="document">
+    
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">        
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#home">E.H.A Laboratory</a>
+        </div>
+        
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+            <li><a href="#about" data-toggle="tab">About</a></li>
+            <li><a href="#Instrutment" data-toggle="tab">Instrutment</a></li>
+            <li><a href="#contact" data-toggle="tab">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->      
+      </div><!--/.Container --> 
+    </div>
 
-		</div>
-	</div>	
-</body>
+    <!--Response Page Content-->
+    <div class="tab-content">
+      <div class="tab-pane active jumbotron" id="home">
+        <div class="container">
+           <div class="col-md-7">
+              <h1>Environmental Health Assessment Laboratory</h1>
+           </div>
+           <div class="col-md-1"></div>
+           <div class="col-md-4">
+              <img src="img\Logo\logo2.gif" alt="Sinica" class="img-circle">
+           </div> 
+        </div>        
+      </div><!--/.home-->
+      
+      <div class="tab-pane" id="about">
+        <div class="container">        
+          <h3>Research Direction</h2>
+          <p>The research focuses of our laboratory are 
+            <ol>
+              <li>the temporal and spatial distributions and the source apportionment of organic aerosols in the air.</li>
+              <li>the exposure and risk assessment of toxic chemicals in the air and food.</li>
+            </ol>
+          </p> 
+          
+          <p>The current research topics are 
+            <ol>
+              <li>assessing persistent organic pollutants (POPs) such as polycyclic aromatic hydrocarbons (PAHs), polychlorinated biphenyls (PCBs), and chlorinated pesticides in the aerosols;</li>
+              <li>evaluating the size and temporal distributions  of ionic species of aerosols; </li>
+              <li>exploring the interaction of air pollutants and meteorological parameters and hopefully projecting the potential impact of climate change on public health;</li>
+              <li>assessing the sources, levels, exposure pathways, and exposure factors fn the personal aerosol exposure in different micro-environments.</li>
+            </ol> 
+          </p>
+
+          <p>For example, we assessed residents’exposure to aerosols and PAHs during worshipping activities at home, in the temple and during Tachia Ma-Tsu Goddess parade and evaluated the contribution of potential exposure factors; we compared the commuters’exposure to aerosols and PAHs with different commuting modes (motorcycle, car, and subway); we also assessed the contribution of dust events and biomass burning on the air quality of Taiwan.</p>        
+        </div>  
+      </div><!--/.about-->
+      
+      <div class="tab-pane" id="Instrutment">
+        <div class="container">            
+            <h3 id="ic"><span class="glyphicon glyphicon-th-list"></span>&nbsp ion chromatography (IC)</h3>
+            <img src="img\Instrumentation\ic.jpg" alt="ic" class="img-thumbnail"><p></p>
+            <p class="text-justify text-info">IC is used to analyze ionic species of aerosol such as sulfate, nitrate, ammonium, sodium, chloride, etc.</p>            
+            <hr />
+            <h3 id="gc"><span class="glyphicon glyphicon-th-list"></span>&nbsp gas chromatography (GC)</h3>
+            <img src="img\Instrumentation\gc.jpg" alt="gc" class="img-thumbnail"><p></p>
+            <p class="text-justify text-info">GC is connected to two different detectors: electron capture detector (ECD)and flame ionization detector (FID) to analyze polychlorinated biphenyls (PCBs), polycyclic aromatic hydrocarbons (PAHs) and chlorinated pesticides</p>            
+            <hr />
+            <h3 id="gc-mass"><span class="glyphicon glyphicon-th-list"></span>&nbsp GC mass spectrometry</h3>
+            <img src="img\Instrumentation\gc-ms.jpg" alt="gc-ms" class="img-thumbnail"><p></p>
+            <p class="text-justify text-info">Besides analyzing PAHs, PCBs, and chlorinated pesticides, GC/MS is used to analyze source tracers such as those emitted from vehicle and fragrances.</p>
+            <hr />
+            <h3 id="lc-ms-ms"><span class="glyphicon glyphicon-th-list"></span>&nbsp liquid chromatography - triple-quadrupole mass spectrometry (LC/MS/MS)</h3>
+            <img src="img\Instrumentation\lc-ms-ms.jpg" alt="lc-ms-ms" class="img-thumbnail"><p></p>
+            <p class="text-justify text-info">LC/MS/MS is used to analyze soluble organics in the aerosols such as tracers from biomass burning and tire dusts and organic acids; it can also be used for analyze pharmaceuticals and active ingredients of personal care products in the water environments which may be harmful to biota in the waters.</p>
+        </div><!-- /.container -->
+      </div><!--/.Instrutment --> 
+      
+      <div class="tab-pane" id="contact">
+        4...
+      </div><!--/.contact-->
+    
+    </div><!--End Response Page Content-->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
